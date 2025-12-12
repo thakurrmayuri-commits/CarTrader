@@ -16,8 +16,13 @@ export const ROUTES = [
         //exact: true,
     },
     {
-        path: "/newproduct",
+        path: "/newcar",
         component: () => import("../Pages/NewCar.tsx"),
+        //exact: true,
+    },
+    {
+        path: "/about",
+        component: () => import("../Pages/EditCar.tsx"),
         //exact: true,
     },
 

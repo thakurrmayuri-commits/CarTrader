@@ -1,14 +1,15 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { ROUTES } from "../utils/config";
-import AppHeader from './AppHeader'
-import Footer from "@/Pages/Footer";
+
+
+
 
 
 function Applaout() {
     return (
         <section>
-            <AppHeader />
+
             <div>
                 <Routes>
                     {ROUTES.map(
@@ -32,7 +33,7 @@ function Applaout() {
                     )}
                 </Routes>
             </div>
-            <Footer />
+
         </section>
     );
 }
