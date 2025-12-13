@@ -11,14 +11,14 @@ import {
 
 function CarouselSpacing() {
     return (
-        <Carousel className="w-auto max-w-3xl">
-            <CarouselContent className="-ml-2">
+        <Carousel className="w-auto">
+            <CarouselContent>
                 {CarCategory.map((label) => (
-                    <CarouselItem key={label.id} className="pl-2 md:basis-30 lg:basis-1/2">
+                    <CarouselItem key={label.id} className="pl-2 md:basis-1/2 lg:basis-1/8">
                         <div className="p-1">
-                            <Card className="bg-orange-100">
+                            <Card className="bg-orange-50 hover:scale-105 transition-transform duration-300">
                                 <CardContent className="flex aspect-square items-center justify-center p-6">
-                                    <div className="flex flex-col justify-center item-center gap-2">
+                                    <div>
                                         <p className="flex justify-center text-2xl font bold">{label.title}</p>
                                         <img className="sepia-50" src={label.thumbnail}
                                             alt={label.title}
