@@ -2,7 +2,6 @@ import React, { useEffect, useCallback } from "react";
 import useCarList from '../AppComponent/useCarProducts';
 import CarProduct from '../AppComponent/CarProduct';
 import SearchFinance from "./FinanceSearch";
-import { Card, CardContent } from "@/components/ui/card"
 
 import {
     Carousel,
