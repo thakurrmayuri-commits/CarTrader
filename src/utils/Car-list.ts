@@ -53,7 +53,7 @@ export const Cars = [
   },
   {
     "id": 2,
-    "title": "Certified 2024 BMW X3 xDrive30i w/ Premium Package w/ZPA",
+    "title": "Certified 2024 BMW X3 xDrive30i",
     "description": "This 2024 BMW X3 xDrive30i is a true standout in the luxury SUV market. Boasting a sleek Gray exterior and a well-appointed interior, this certified pre-owned BMW is the perfect blend of style, performance, and practicality.",
     "category": "Old",
     "price": "22,421",
@@ -105,7 +105,7 @@ export const Cars = [
   },
   {
     "id": 3,
-    "title": "Certified 2024 BMW X3 xDrive30i w/ Premium Package",
+    "title": "Certified 2024 BMW X3 xDrive30i",
     "description": "This 2024 BMW X3 xDrive30i is a stunning example of German engineering and luxury. Boasting a powerful I4 engine, 8-speed automatic transmission, and all-wheel drive, this SUV delivers an exceptional driving experience combined with impressive fuel efficiency",
     "category": "Old",
     "price": "40,421",

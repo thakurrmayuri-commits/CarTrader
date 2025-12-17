@@ -11,8 +11,8 @@ export const ROUTES = [
         //exact: true,
     },
     {
-        path: "/product/:id",
-        component: () => import("../Pages/EditCar.tsx"),
+        path: "/car/:id",
+        component: () => import("../Pages/CarDetails.tsx"),
         //exact: true,
     },
     {
@@ -21,8 +21,19 @@ export const ROUTES = [
         //exact: true,
     },
     {
-        path: "/about",
-        component: () => import("../Pages/EditCar.tsx"),
+        path: "/oldInventery",
+        component: () => import("../Pages/UsedCar.tsx"),
+        //exact: true,
+    },
+
+    {
+        path: "/wishlist",
+        component: () => import("../Pages/WishList.tsx"),
+        //exact: true, 
+    },
+    {
+        path: "/cart",
+        component: () => import("../Pages/Cart.tsx"),
         //exact: true,
     },
 

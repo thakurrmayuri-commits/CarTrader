@@ -19,17 +19,17 @@ export const CarCategory = [
         "id": 3,
         "title": "Coup",
         "images": [
-            "/Coup.jpg"
+            "/Coup1.jpg"
         ],
-        "thumbnail": "/Coup.jpg"
+        "thumbnail": "/Coup1.jpg"
     },
     {
         "id": 4,
         "title": "Truck",
         "images": [
-            "/Truck.jpg"
+            "/truck2.jpg"
         ],
-        "thumbnail": "/Truck.jpg",
+        "thumbnail": "/truck2.jpg",
     },
     {
         "id": 5,
@@ -40,7 +40,7 @@ export const CarCategory = [
         "thumbnail": "/Minivan.jpg"
     },
     {
-        "id": 1,
+        "id": 6,
         "title": "SUV",
         "images": [
             "/SUV.jpg"
@@ -48,7 +48,7 @@ export const CarCategory = [
         "thumbnail": "/SUV.jpg"
     },
     {
-        "id": 2,
+        "id": 7,
         "title": "Sedan",
         "images": [
             "/Sedan.jpg"
@@ -56,23 +56,23 @@ export const CarCategory = [
         "thumbnail": "/Sedan.jpg"
     },
     {
-        "id": 3,
+        "id": 8,
         "title": "Coup",
         "images": [
-            "/Coup.jpg"
+            "/Coup1.jpg"
         ],
-        "thumbnail": "/Coup.jpg"
+        "thumbnail": "/Coup1.jpg"
     },
     {
-        "id": 4,
-        "title": "Truck",
+        "id": 9,
+        "title": "truck",
         "images": [
-            "/Truck.jpg"
+            "/truck2.jpg"
         ],
-        "thumbnail": "/Truck.jpg",
+        "thumbnail": "/truck2.jpg",
     },
     {
-        "id": 5,
+        "id": 10,
         "title": "Minivan",
         "images": [
             "/Minivan.jpg"

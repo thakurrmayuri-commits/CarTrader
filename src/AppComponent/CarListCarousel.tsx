@@ -1,6 +1,8 @@
 
-import { Cars } from "@/utils/Car-list";
+import { useCarProducts } from "../AppComponent/CarContextProvider"
+import useCarList from "../AppComponent/useCarProducts";
 import { Card, CardContent } from "@/components/ui/card"
+
 import {
     Carousel,
     CarouselContent,
@@ -8,8 +10,13 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import { Heart } from 'lucide-react';
 
 function CarsCarousel() {
+    const Cars = useCarList();
+    const { addWishList } = useCarProducts();
+
+
     return (
         <Carousel className="w-auto">
             <CarouselContent>
@@ -22,7 +29,8 @@ function CarsCarousel() {
                                         <p className="flex justify-center text-2xl font bold">{label.title}</p>
                                         <img className="sepia-50" src={label.thumbnail}
                                             alt={label.title}
-                                        /></div>
+                                        /><div className="flex justify-end p-2 cursor-pointer w-8 h-8 item-center rounded-full hover:bg-indigo-300"
+                                            onClick={() => addWishList(label)}><Heart size={16} /></div></div>
                                 </CardContent>
                             </Card>
                         </div>
