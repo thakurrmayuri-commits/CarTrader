@@ -25,6 +25,11 @@ export const ROUTES = [
         component: () => import("../Pages/UsedCar.tsx"),
         //exact: true,
     },
+    {
+        path: "/about",
+        component: () => import("../Pages/About.tsx"),
+        //exact: true,
+    },
 
     {
         path: "/wishlist",
