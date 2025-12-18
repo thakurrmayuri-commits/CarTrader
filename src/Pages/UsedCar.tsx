@@ -34,7 +34,7 @@ const OldCar = () => {
 
     return (
         <>
-            <div className="p-4 h-50 gap-10 bg-[url(/Car2.png)] flex flex-row">
+            <div className="p-4 h-50 gap-10 bg-[url(/CARback.jpg)] flex flex-row">
                 <div>
                     <h1 className="text-2xl font-bold text-white">Used Cars for sale</h1>
                     <div className="flex flex-row gap-4">

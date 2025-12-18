@@ -1,5 +1,4 @@
 import { useMemo } from "react";
-import type { ProductProps } from "../utils/type"
 import { useParams } from "react-router-dom";
 import useCarList from "@/AppComponent/useCarProducts.tsx";
 
@@ -11,7 +10,7 @@ const CarDetails = () => {
 
     const car = useMemo(() => {
         if (!Array.isArray(cars) || productId === undefined) return undefined;
-        return cars.find((c: ProductProps) => c.id === productId);
+        return cars.find((c: any) => c.id === productId);
     }, [cars, productId]);
 
     return (
