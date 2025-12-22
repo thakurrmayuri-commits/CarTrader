@@ -2,7 +2,6 @@ import { Car } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useCarProducts } from "../AppComponent/CarContextProvider"
 import { ShoppingCart, Heart, Landmark } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import {
     NavigationMenu,
     NavigationMenuItem,
