@@ -56,7 +56,7 @@ const UserInfo = () => {
                             <NavigationMenuLink asChild>
                                 <Button
                                     variant="outline"
-                                    className="w-full"
+                                    className="w-full bg-orange-400 rounded cursor-pointer"
                                     onClick={logOutHandler}
                                 >
                                     Logout

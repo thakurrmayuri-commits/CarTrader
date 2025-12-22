@@ -26,7 +26,7 @@ const LogIn = () => {
                         </div>
                     </div>
                     <CardTitle className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                        Inventory Management
+                        Car Inventory Management
                     </CardTitle>
                     <CardDescription className="text-base">
                         Welcome back! Sign in to manage your inventory

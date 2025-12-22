@@ -8,7 +8,7 @@ export const ROUTES = [
     {
         path: "/",
         component: () => import("../Pages/Home.tsx"),
-        exact: true,
+        exact: false,
     },
     {
         path: "/car/:id",
@@ -18,17 +18,17 @@ export const ROUTES = [
     {
         path: "/newcar",
         component: () => import("../Pages/NewCar.tsx"),
-        exact: true,
+        exact: false,
     },
     {
         path: "/oldInventery",
         component: () => import("../Pages/UsedCar.tsx"),
-        exact: true,
+        exact: false,
     },
     {
         path: "/about",
         component: () => import("../Pages/About.tsx"),
-        exact: true,
+        exact: false,
     },
     {
         path: "/wishlist",
@@ -44,7 +44,7 @@ export const ROUTES = [
     {
         path: "/login",
         component: () => import("../Pages/LogIn.tsx"),
-        exact: true,
+        exact: false,
     },
 
 ]

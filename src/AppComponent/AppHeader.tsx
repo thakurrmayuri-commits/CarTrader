@@ -14,11 +14,11 @@ const AppHeader = () => {
     const { CarProducts } = useCarProducts();
 
     return (
-        <header className='bg-white shadow-md h-16 px-4 flex justify-between items-center bg-linear-to-r/oklab from-black to-blue-600 text-gray-300'>
+        <header className='bg-white shadow-md px-4 flex justify-between items-center bg-linear-to-r/oklab from-black to-blue-600 text-gray-300'>
             <Link to="/">
                 <div className='flex flex-row gap-1'><span><Car /></span><span>CarTrader</span></div></Link>
             <NavigationMenu className='flex item-center gap-4'>
-                <NavigationMenuList className='className="flex-wrap"'>
+                <NavigationMenuList>
                     <NavigationMenuItem className='flex flex-row gap-4'>
                         <NavigationMenuLink asChild>
                             <Link to="/newcar">New Cars</Link>
@@ -37,7 +37,7 @@ const AppHeader = () => {
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
                             <Link to="/cart"><p className="h-4 w-4 rounded-full bg-yellow-500 text-sm text-black flex items-center justify-center">
-                                {CarProducts.length}</p><ShoppingCart />
+                                {CarProducts.length}</p>
                             </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
