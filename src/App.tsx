@@ -2,17 +2,17 @@
 import Applaout from './AppComponent/AppLayout'
 import Footer from "@/Pages/Footer";
 import AppHeader from './AppComponent/AppHeader'
-import { ProductProvider } from "./AppComponent/CarContextProvider";
+import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
 
   return (
-    <ProductProvider>
+    <BrowserRouter>
       <AppHeader />
       <Applaout />
       <Footer />
-    </ProductProvider>
+    </BrowserRouter>
   )
 }
 
