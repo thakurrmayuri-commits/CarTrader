@@ -3,10 +3,11 @@ import { useCarProducts } from "../AppComponent/CarContextProvider";
 import { Heart } from 'lucide-react';
 
 const CarProduct = ({ car }: { car: any }) => {
-    const { addCarProduct, addWishList } = useCarProducts();
+    const { addCarProduct, addWishList, addRecentViewList } = useCarProducts();
     const navigate = useNavigate();
 
     const onProductClickHandler = () => {
+        addRecentViewList?.(car);
         navigate(`/car/${car.id}`);
     };
     return (
@@ -25,6 +26,7 @@ const CarProduct = ({ car }: { car: any }) => {
                 <div
                     onClick={() => {
                         addWishList(car);
+                        addRecentViewList?.(car);
                         alert("Added to Wishlist")
                     }}><Heart className='transition delay-150 duration-300 ease-in-out hover:rounded-full hover:scale-110 hover:cursor-pointer hover:bg-indigo-300' /></div>
 
@@ -33,6 +35,7 @@ const CarProduct = ({ car }: { car: any }) => {
                     onClick={(e) => {
                         e.stopPropagation();
                         addCarProduct(car);
+                        addRecentViewList?.(car);
                     }}
                 >
                     Add to Cart

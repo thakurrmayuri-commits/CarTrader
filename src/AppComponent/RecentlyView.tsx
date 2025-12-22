@@ -1,6 +1,5 @@
 
 import { useCarProducts } from "../AppComponent/CarContextProvider"
-import useCarList from "../AppComponent/useCarProducts";
 import { Card, CardContent } from "@/components/ui/card"
 
 import {
@@ -13,8 +12,8 @@ import {
 import { Heart } from 'lucide-react';
 
 function RecentViewCarousel() {
-    const { addWishList } = useCarProducts();
-    const carRecent = useCarList();
+    const { addWishList, carRecent } = useCarProducts();
+    // const carRecent = useCarList();
 
 
     return (
