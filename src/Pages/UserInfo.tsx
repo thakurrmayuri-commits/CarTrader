@@ -45,13 +45,10 @@ const UserInfo = () => {
                     </div>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                    <ul className="grid w-[200px] gap-4">
+                    <ul className="grid w-[100px] gap-1">
                         <li>
                             <NavigationMenuLink asChild>
                                 <Link to="/profile">Profile</Link>
-                            </NavigationMenuLink>
-                            <NavigationMenuLink asChild>
-                                <Link to="/about">About</Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild>
                                 <Button
