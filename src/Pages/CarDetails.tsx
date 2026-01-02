@@ -3,7 +3,14 @@ import { useParams } from "react-router-dom";
 import useCarList from "@/AppComponent/useCarProducts.tsx";
 
 import { useCarProducts } from "../AppComponent/CarContextProvider";
-import { Heart } from 'lucide-react';
+import {
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 
 const CarDetails = () => {
     const { addCarProduct, addRecentViewList } = useCarProducts();
@@ -22,7 +29,22 @@ const CarDetails = () => {
 
     return (
         <section>
-            <h1 className="p-2 font-bold">{car?.title ?? (id ?? "Car not found")}</h1>
+            <h1 className="p-2 font-bold"><Breadcrumb>
+                <BreadcrumbList>
+                    <BreadcrumbItem>
+                        <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                        <BreadcrumbLink href="/newcar">Cars</BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                        <BreadcrumbPage>{car?.title ?? (id ?? "Car not found")}</BreadcrumbPage>
+                    </BreadcrumbItem>
+                </BreadcrumbList>
+            </Breadcrumb>
+            </h1>
             <div className="flex flex-row gap-4 rounded-lg p-2 justify-between">
                 <div className="rounded-lg bg-gray-200 py-4 px-6 gap-6">
                     {car?.thumbnail ? (

@@ -3,6 +3,7 @@ import useCarList from '../AppComponent/useCarProducts';
 import CarProduct from '../AppComponent/CarProduct';
 import SearchFinance from "./FinanceSearch";
 
+
 import {
     Carousel,
     CarouselContent,
@@ -10,6 +11,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+
 
 
 
@@ -34,7 +36,10 @@ const NewCar = () => {
         <>
             <div className="p-4 h-50 gap-10 bg-[url(/Car2.png)] flex flex-row">
                 <div>
+                    <h1 className="p-2 font-bold">
+                    </h1>
                     <h1 className="text-2xl font-bold text-white">New Cars for sale</h1>
+
                     <div className="flex flex-row gap-4">
                         <input
                             type="text"
@@ -54,6 +59,7 @@ const NewCar = () => {
 
                         <CarouselItem key={car.id} className="pl-2 md:basis-1/2 lg:basis-1/4">
                             <CarProduct key={car.id} car={car} />
+
                         </CarouselItem>
                     ))}
                 </CarouselContent>
