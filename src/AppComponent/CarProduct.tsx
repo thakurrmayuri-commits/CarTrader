@@ -18,10 +18,10 @@ const CarProduct = ({ car }: { car: any }) => {
             <img
                 src={car.thumbnail}
                 alt={car.title}
-                className="w-full h-30 object-cover mb-4 rounded"
+                className="w-auto h-auto object-cover mb-4 rounded"
             />
             <h3 className="text-lg font-semibold mb-2">{car.title}</h3>
-            <p className="text-gray-600 mb-2">${car.price}</p>
+            <p className="text-gray-400 mb-2">${car.price}</p>
             <div className="flex justify-end gap-2">
                 <div
                     onClick={() => {

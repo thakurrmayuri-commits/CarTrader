@@ -48,12 +48,6 @@ const NewCar = () => {
                     </div></div>
             </div>
             <div className="p-2 gap-4"><SearchFinance /></div>
-            <div className="flex flex-row gap-8 justify-between">
-                <div className="w-200 px-16 py-8"><h1 className="text-3xl py-4">Buying a New Car</h1>
-                    Buying a new car ensures you'll get the most possible life out of the car. You are the first owner, after all! With almost no miles, the most up-to-date safety features, and all the bells and whistles of the latest technology, the value of a new car can be enticing for any buyer. Although new car prices may exceed those of a used car, you won’t have to worry about maintenance for a while as additional warranties are typically included in the new car price. Plus, you might want to trade-in for another car by the time your warranty expires. Not sure where to start? Check out our list of the best new cars this year.
-                </div>
-                <div className="flex justify-center"><img src="/Buy_installments.svg" alt="Finance" className="w-1/3 h-auto" /></div>
-            </div>
             <Carousel className="w-auto">
                 <CarouselContent>
                     {filteredProducts.map((car) => (
@@ -66,6 +60,12 @@ const NewCar = () => {
                 <CarouselPrevious />
                 <CarouselNext />
             </Carousel>
+            <div className="flex flex-row gap-8 justify-between">
+                <div className="w-200 px-16 py-8"><h1 className="text-3xl py-4">Buying a New Car</h1>
+                    Buying a new car ensures you'll get the most possible life out of the car. You are the first owner, after all! With almost no miles, the most up-to-date safety features, and all the bells and whistles of the latest technology, the value of a new car can be enticing for any buyer. Although new car prices may exceed those of a used car, you won’t have to worry about maintenance for a while as additional warranties are typically included in the new car price. Plus, you might want to trade-in for another car by the time your warranty expires. Not sure where to start? Check out our list of the best new cars this year.
+                </div>
+                <div className="flex justify-center"><img src="/Buy_installments.svg" alt="Finance" className="w-1/3 h-auto" /></div>
+            </div>
         </>
     );
 }

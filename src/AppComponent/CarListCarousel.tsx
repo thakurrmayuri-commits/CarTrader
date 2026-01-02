@@ -1,44 +1,27 @@
 
-import { useCarProducts } from "../AppComponent/CarContextProvider"
 import useCarList from "../AppComponent/useCarProducts";
-import { Card, CardContent } from "@/components/ui/card"
-
+import CarProduct from "../AppComponent/CarProduct"
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
-import { Heart } from 'lucide-react';
+
 
 function CarsCarousel() {
     const Cars = useCarList();
-    const { addWishList } = useCarProducts();
+
 
 
     return (
         <Carousel className="w-auto">
             <CarouselContent>
-                {Cars.map((label) => (
-                    <CarouselItem key={label.id} className="pl-2 md:basis-1/2 lg:basis-1/4">
-                        <div className="p-1">
-                            <Card className="bg-orange-50 hover:scale-105 transition-transform duration-300">
-                                <CardContent className="flex aspect-square items-center justify-center p-6">
-                                    <div>
-                                        <p className="flex justify-center text-2xl font bold">{label.title}</p>
-                                        <img className="sepia-50" src={label.thumbnail}
-                                            alt={label.title}
-                                        /><div className="flex justify-end p-2 cursor-pointer w-8 h-8 item-center rounded-full hover:bg-indigo-300"
-                                            onClick={() => addWishList(label)}><Heart size={16} /></div></div>
-                                </CardContent>
-                            </Card>
-                        </div>
+                {Cars.map((car) => (
+                    <CarouselItem key={car.id} className="pl-2 md:basis-1/2 lg:basis-1/4 sepia-50">
+                        <CarProduct key={car.id} car={car} />
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
         </Carousel>
     )
 }

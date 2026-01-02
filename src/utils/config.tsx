@@ -13,7 +13,7 @@ export const ROUTES = [
     {
         path: "/car/:id",
         component: () => import("../Pages/CarDetails.tsx"),
-        exact: true,
+        exact: false,
     },
     {
         path: "/newcar",
