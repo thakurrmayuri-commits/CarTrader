@@ -34,14 +34,11 @@ const AppHeader = () => {
                                 <Link to="/about">About</Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild>
-                                <div>
-                                    <button
-                                        onClick={() => modalRef.current.openModal()}
-                                    >
-                                        <Landmark color='#27e44dff' />
-                                    </button>
-
-                                </div>
+                                <button
+                                    onClick={() => modalRef.current.openModal()}
+                                >
+                                    <Landmark color='#27e44dff' />
+                                </button>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild>
                                 <Link to="/profile">Profile</Link>
