@@ -26,10 +26,10 @@ const LogIn = () => {
                         </div>
                     </div>
                     <CardTitle className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-orange-600 bg-clip-text text-transparent">
-                        Car Inventory Management
+                        Car Traders
                     </CardTitle>
                     <CardDescription className="text-base">
-                        Welcome back! Sign in to manage your inventory
+                        Welcome back! Sign in to your account
                     </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
