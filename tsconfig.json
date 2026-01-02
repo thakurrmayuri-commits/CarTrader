@@ -9,10 +9,6 @@
     }
   ],
   "compilerOptions": {
-    "types": [
-      "vitest/config",
-      "vite/client"
-    ],
     "baseUrl": ".",
     "paths": {
       "@/*": [

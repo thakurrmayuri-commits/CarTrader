@@ -10,6 +10,7 @@
     ],
     "module": "ESNext",
     "types": [
+      "vitest/config",
       "vite/client"
     ],
     "skipLibCheck": true,
